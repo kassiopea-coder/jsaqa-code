@@ -15,3 +15,11 @@ describe("Books names test suit", () => {
     ]);
   });
 });
+
+test("Books names shouldn't be sorted in ascending order", () => {
+  const input = ["Властелин Колец", "Властелин Колец"];
+  const result = sorting.sortByName(input);
+  const expected = ["Властелин Колец", "Властелин Колец"];
+
+  expect(result).toEqual(expected);
+});
